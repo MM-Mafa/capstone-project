@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E68E24AA"
+    tools:context=".Profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/home_page_pg"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/show_my_profile_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:padding="4sp"
+            android:text="my profile"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/show_name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="100dp"
+            android:padding="4sp"
+            android:text="name"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/show_my_profile_textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/show_surname_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4sp"
+            android:text="surname"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/show_name_textView"
+            app:layout_constraintTop_toBottomOf="@+id/show_name_textView" />
+
+        <TextView
+            android:id="@+id/show_email_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4sp"
+            android:text="email"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/show_surname_textView"
+            app:layout_constraintTop_toBottomOf="@+id/show_surname_textView" />
+
+        <TextView
+            android:id="@+id/show_address_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4sp"
+            android:text=""
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/show_email_textView"
+            app:layout_constraintTop_toBottomOf="@+id/show_email_textView" />
+
+        <TextView
+            android:id="@+id/show_party_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4sp"
+            android:text="party membership"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/show_address_textView"
+            app:layout_constraintTop_toBottomOf="@+id/show_address_textView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/app_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/top_bar"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Fingerprint Voting System"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/bottomBar"
+        layout="@layout/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

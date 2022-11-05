@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile_icon"
+            app:showAsAction="ifRoom"
+            android:title="profile"/>
+        <item
+            android:id="@+id/election_board"
+            android:icon="@drawable/vote_board"
+            app:showAsAction="ifRoom"
+            android:title="election board" />
+        <item
+            android:id="@+id/tutorial"
+            android:icon="@drawable/ic_baseline_how_to_vote_24"
+            app:showAsAction="ifRoom"
+            android:title="voting tutorial" />
+
+</menu>
